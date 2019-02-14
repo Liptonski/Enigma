@@ -1,0 +1,10 @@
+.label {
+    -fx-background-radius: 5em;
+    -fx-background-color: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 29px;
+}
+
+#matryca {
+    -fx-background-image: url("../resources/tlo_enigma.jpg")
+}

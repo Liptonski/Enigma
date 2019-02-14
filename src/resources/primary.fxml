@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1301.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="save_btn" mnemonicParsing="false" onAction="#directoryChooser" text="Save" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane fx:id="matryca" prefHeight="823.0" prefWidth="1301.0" stylesheets="@../sample/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="q" alignment="CENTER" contentDisplay="CENTER" layoutX="140.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="Q" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font></Label>
+            <Text fx:id="text" layoutX="226.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="845.13671875">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Label fx:id="w" alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="W" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="e" alignment="CENTER" contentDisplay="CENTER" layoutX="380.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="E" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="r" alignment="CENTER" contentDisplay="CENTER" layoutX="500.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="R" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="t" alignment="CENTER" contentDisplay="CENTER" layoutX="620.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="T" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="z" alignment="CENTER" contentDisplay="CENTER" layoutX="740.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="Z" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="u" alignment="CENTER" contentDisplay="CENTER" layoutX="860.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="U" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="i" alignment="CENTER" contentDisplay="CENTER" layoutX="980.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="I" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="a" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="460.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="A" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="155.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="s" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="460.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="S" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="155.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="d" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="460.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="D" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="155.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="f" alignment="CENTER" contentDisplay="CENTER" layoutX="560.0" layoutY="460.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="F" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="155.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="g" alignment="CENTER" contentDisplay="CENTER" layoutX="680.0" layoutY="460.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="G" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="155.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="h" alignment="CENTER" contentDisplay="CENTER" layoutX="800.0" layoutY="460.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="H" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="155.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="o" alignment="CENTER" contentDisplay="CENTER" layoutX="1100.0" layoutY="360.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="O" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="255.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="j" alignment="CENTER" contentDisplay="CENTER" layoutX="920.0" layoutY="460.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="J" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="155.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="k" alignment="CENTER" contentDisplay="CENTER" layoutX="1040.0" layoutY="460.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="K" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="155.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="p" alignment="CENTER" contentDisplay="CENTER" layoutX="140.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="P" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="y" alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="Y" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="379.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="X" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0" fx:id="x">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="c" alignment="CENTER" contentDisplay="CENTER" layoutX="500.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="C" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="v" alignment="CENTER" contentDisplay="CENTER" layoutX="620.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="V" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="b" alignment="CENTER" contentDisplay="CENTER" layoutX="740.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="B" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="n" alignment="CENTER" contentDisplay="CENTER" layoutX="860.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="N" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="m" alignment="CENTER" contentDisplay="CENTER" layoutX="986.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="M" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="l" alignment="CENTER" contentDisplay="CENTER" layoutX="1100.0" layoutY="560.0" maxHeight="60.0" maxWidth="60.0" prefHeight="60.0" prefWidth="60.0" stylesheets="@../sample/style.css" text="L" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="r2" layoutX="574.0" layoutY="146.0" prefWidth="150.0" stylesheets="@../sample/style2.css" AnchorPane.topAnchor="146.0" />
+            <ChoiceBox fx:id="r3" layoutX="328.0" layoutY="146.0" prefWidth="150.0" stylesheets="@../sample/style2.css" AnchorPane.topAnchor="146.0" />
+            <ChoiceBox fx:id="r1" layoutX="823.0" layoutY="146.0" prefHeight="19.0" prefWidth="150.0" stylesheets="@../sample/style2.css" AnchorPane.topAnchor="146.0" />
+            <Button fx:id="btn_2" layoutX="597.0" layoutY="204.0" mnemonicParsing="false" onAction="#onClick_2" prefHeight="25.0" prefWidth="105.0" text="Zatwierdź" AnchorPane.topAnchor="204.0" />
+            <Button fx:id="btn_1" layoutX="845.0" layoutY="204.0" mnemonicParsing="false" onAction="#onClick_1" prefHeight="25.0" prefWidth="105.0" text="Zatwierdź" AnchorPane.topAnchor="204.0" />
+            <Button fx:id="btn_3" layoutX="350.0" layoutY="204.0" mnemonicParsing="false" onAction="#onClick_3" prefHeight="25.0" prefWidth="105.0" text="Zatwierdź" AnchorPane.topAnchor="204.0" />
+            <ChoiceBox fx:id="num_r1" layoutX="869.0" layoutY="80.0" prefHeight="31.0" prefWidth="57.0" stylesheets="@../sample/style2.css" AnchorPane.topAnchor="80.0" />
+            <ChoiceBox fx:id="num_r2" layoutX="621.0" layoutY="80.0" prefHeight="31.0" prefWidth="57.0" stylesheets="@../sample/style2.css" AnchorPane.topAnchor="80.0" />
+            <ChoiceBox fx:id="num_r3" layoutX="374.0" layoutY="80.0" prefHeight="31.0" prefWidth="57.0" stylesheets="@../sample/style2.css" AnchorPane.topAnchor="80.0" />
+            <Label alignment="CENTER" layoutX="527.0" layoutY="292.0" prefHeight="31.0" prefWidth="244.0" stylesheets="@../sample/style2.css" text="Zaszyfrowana wiadomość" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane fx:id="plugs" prefHeight="145.0" prefWidth="1301.0" stylesheets="@../sample/style2.css" BorderPane.alignment="CENTER">
+         <children>
+            <ChoiceBox fx:id="plug_11" layoutX="124.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_12" layoutX="189.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_21" layoutX="124.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_22" layoutX="189.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_31" layoutX="387.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_32" layoutX="452.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_41" layoutX="387.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_42" layoutX="452.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_51" layoutX="646.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_52" layoutX="711.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_61" layoutX="646.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_62" layoutX="711.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_71" layoutX="902.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_72" layoutX="967.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_81" layoutX="902.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_82" layoutX="967.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_91" layoutX="1151.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_92" layoutX="1216.0" layoutY="38.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_101" layoutX="1151.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <ChoiceBox fx:id="plug_102" layoutX="1216.0" layoutY="92.0" prefHeight="25.0" prefWidth="47.0" />
+            <Button fx:id="conn_1" layoutX="44.0" layoutY="38.0" mnemonicParsing="false" onAction="#connection1" text="conn_1" />
+            <Button fx:id="conn_2" layoutX="44.0" layoutY="92.0" mnemonicParsing="false" onAction="#connection2" text="conn_2" />
+            <Button fx:id="conn_3" layoutX="302.0" layoutY="38.0" mnemonicParsing="false" onAction="#connection3" text="conn_3" />
+            <Button fx:id="conn_4" layoutX="302.0" layoutY="92.0" mnemonicParsing="false" onAction="#connection4" text="conn_4" />
+            <Button fx:id="conn_5" layoutX="564.0" layoutY="38.0" mnemonicParsing="false" onAction="#connection5" text="conn_5" />
+            <Button fx:id="conn_6" layoutX="564.0" layoutY="92.0" mnemonicParsing="false" onAction="#connection6" text="conn_6" />
+            <Button fx:id="conn_7" layoutX="822.0" layoutY="38.0" mnemonicParsing="false" onAction="#connection7" text="conn_7" />
+            <Button fx:id="conn_8" layoutX="822.0" layoutY="92.0" mnemonicParsing="false" onAction="#connection8" text="conn_8" />
+            <Button fx:id="conn_9" layoutX="1075.0" layoutY="38.0" mnemonicParsing="false" onAction="#connection9" prefHeight="25.0" prefWidth="59.0" text="conn_9" />
+            <Button fx:id="conn_10" layoutX="1075.0" layoutY="92.0" mnemonicParsing="false" onAction="#connection10" text="conn_10" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

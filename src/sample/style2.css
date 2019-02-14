@@ -1,0 +1,15 @@
+.label {
+    -fx-background-color: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+}
+.choice-box{
+    -fx-text-fill: white;
+    -fx-background-color: black;
+}
+
+#plugs {
+    -fx-background-image: url("../resources/tlo_kable.jpg")
+}
