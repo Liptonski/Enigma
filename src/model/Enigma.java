@@ -3,13 +3,13 @@ package model;
 import java.util.ArrayList;
 
 public class Enigma {
-    private String template = "qwertyuiopasdfghjklzxcvbnm";
+    private String template = "qwertyuiopasdfghjklzxcvbnm"; // pomocniczy string do zmiany char na int i odwronie
     private Rotor right;
     private Rotor mid;
     private Rotor left;
     private ReverseRotor rr;
     public InputBoard settings;
-    private ArrayList<Integer> rotorsTaken = new ArrayList<>();
+    //private ArrayList<Integer> rotorsTaken = new ArrayList<>();
 
     public Enigma(){
         right = new Rotor(0, 0);
@@ -17,11 +17,17 @@ public class Enigma {
         left = new Rotor(2, 0);
         rr = new ReverseRotor();
         settings = new InputBoard();
-        rotorsTaken.add(4);
-        rotorsTaken.add(1);
-        rotorsTaken.add(3);
+        //rotorsTaken.add(4);
+        //rotorsTaken.add(1);
+        //rotorsTaken.add(3);
     }
 
+//    --------------------------------------------------------------------------
+//    !!!                 NAJWAZNIEJSZA FUNKCJA W MODELU                     !!!
+//    Jest wywolywana co kazde nacisniecie litery i odpowiada za szyfrowanie jej.
+//    Przechodzi kolejno przez polaczenie kablowe, 3 rotory, rotor zawracajacy
+//    z powrotem 3 rotory i znowu polaczenie kablowe
+//    --------------------------------------------------------------------------
     public char run(char c){
         c = Character.toLowerCase(c);
         int charNum = template.indexOf(c);
@@ -41,6 +47,8 @@ public class Enigma {
 
     }
 
+    //funkcja obracajaca rotor po kazdym nacisnieciu litery
+    // po pelnym obrocie pierwszego, obrot o 1 drugiego, analogicznie z 2 i 3
     public void rotate(){
         right.setPosition((this.right.getPosition()+1));
         if(right.getPosition()==26){

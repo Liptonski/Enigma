@@ -1,9 +1,9 @@
 package model;
 
 public class Rotor {
-    private int[][] setup;
-    private int number;
-    private int position;
+    private int[][] setup; // ustawienia szyfru rotora
+    private int number; // numer rotora
+    private int position; // obecna pozycja
 
     public Rotor(int roNum, int roPos){
         number=roNum;
@@ -36,7 +36,7 @@ public class Rotor {
                 break;
         }
     }
-
+    // funkcja szyfrowania litery, reverse w przypadku drogi powrotnej sygnalu
     int onSignal(int num, boolean reverse){
         if(reverse){
             for (int i[]:setup) {

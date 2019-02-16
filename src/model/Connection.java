@@ -1,5 +1,6 @@
 package model;
 
+// polaczenie 2 liter, in, out to tylko moje nazwy, nie ma znaczenia kolejnosc sygnalu
 public class Connection {
     private int in;
     private int out;

@@ -14,7 +14,7 @@ public class Main extends Application {
         Parent root = loader.load();
         Controller controller = loader.getController();
 
-        Scene scene = new Scene(root, 1300, 900);
+        Scene scene = new Scene(root, 1300, 700);
         scene.setOnKeyPressed(controller);
         scene.setOnKeyReleased(controller);
 
