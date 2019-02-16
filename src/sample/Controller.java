@@ -141,8 +141,6 @@ public class Controller implements EventHandler<KeyEvent> {
     @FXML
     public void onClick_1(){
         eng.setRight(Character.getNumericValue(r1.getValue().charAt(5))-1, Integer.parseInt(num_r1.getValue())-1);
-        System.out.println(r1.getValue().charAt(5));
-        System.out.println(num_r1.getValue());
     }
     @FXML
     public void onClick_2(){
